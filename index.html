@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Boutique des Bacs</title>
- <link rel="icon" type="image/png" href="logo.png">
+<div class="logo-container">
+    <img src="logo.png" alt="Logo">
+    <h1>La Boutique des Bacs</h1>
+</div>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
- <img src="logo.png" alt="Logo" style="height:100px;">
   :root {
     --black: #111110;
     --white: #fafaf8;
@@ -1918,7 +1919,21 @@
       height: 300px;
     }
   }
+.logo-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+}
 
+.logo-container img{
+    height:70px;
+    width:auto;
+}
+
+.logo-container h1{
+    margin:0;
+}
 </style>
 
 
